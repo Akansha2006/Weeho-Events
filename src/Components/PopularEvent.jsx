@@ -11,7 +11,7 @@ export default function PopularEvent() {
       <header className="pe-hero">
         <h1 className="pe-title">Popular Events</h1>
         <p className="pe-subtitle">
-          Here are some of the most popular events in New York City curated by professionals.
+          Here are some of the most popular events in New <br /> York City curated by professionals.
         </p>
       </header>
 
