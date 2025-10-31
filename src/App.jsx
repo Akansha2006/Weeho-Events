@@ -6,14 +6,23 @@ import About from "./Components/About";
 import Stats from "./Components/Stats";
 import Events from "./Components/Events";
 import Footer from "./Components/Footer";
-
+import PopularEvent from "./Components/PopularEvent";
+import PopularEvent1 from "./Components/PopularEvent1";
+import PopularEvent2 from "./Components/PopularEvent2";
+import PopularCustomers from "./Components/reviews/PopularCustomers";
+import OrganizeEvent from "./Components/reviews/OrganizeEvent";
 function App() {
   return (
     <div className="app">
       <Header />
-      <About />
-      <Stats />
-      <Events />
+      {/* <About /> */}
+      <PopularEvent />
+      <PopularEvent1 />
+      <PopularEvent2 />
+      <PopularCustomers />
+      <OrganizeEvent />
+      {/* <Stats /> */}
+      {/* <Events /> */}
       <Footer />
       
     

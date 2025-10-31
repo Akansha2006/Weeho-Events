@@ -1,0 +1,171 @@
+:root{
+  --purple: #5d17f0; /* main purple background */
+  --light-purple: #7b3bff;
+  --white: #ffffff;
+  --muted: rgba(255,255,255,0.55);
+  --input-underline: rgba(255,255,255,0.9);
+  --max-width: 1200px;
+  --card-padding: 56px;
+  --radius: 8px;
+}
+
+/* Base reset */
+*{box-sizing:border-box}
+body{font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;margin:0;color:#222}
+
+/* Section spacing */
+.oe-section{
+  padding: 24px;
+  background: #fff;
+}
+
+/* Large purple card */
+.oe-card{
+  background: var(--purple);
+  color: var(--white);
+  border-radius: var(--radius);
+  padding: var(--card-padding);
+  max-width: var(--max-width);
+  margin: 24px auto;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 6px 20px rgba(13,6,30,0.08);
+}
+
+/* Heading */
+.oe-heading{
+  font-size: 40px;
+  margin: 0 0 42px 0;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+}
+
+/* Form layout: two columns */
+.oe-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Left / Right columns */
+.oe-column-left{ padding-right: 20px }
+.oe-column-right{ padding-left: 20px }
+
+/* Label and small title above inputs */
+.oe-label{
+  display:block;
+  font-size:13px;
+  font-weight:700;
+  color: rgba(255,255,255,0.95);
+  margin-bottom: 18px;
+  text-align: left;
+
+}
+
+/* Message label slightly moved down for alignment */
+.oe-label-message{ margin-top: 6px }
+
+/* Inputs: transparent background, white underline */
+.oe-input,
+.oe-textarea{
+  display:block;
+  width:100%;
+  margin-top:10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--input-underline);
+  color: var(--white);
+  padding: 10px 6px 8px 0;
+  font-size:16px;
+  outline: none;
+  transition: border-color .15s ease;
+}
+
+/* Placeholder styling */
+.oe-input::placeholder,
+.oe-textarea::placeholder{
+  color: rgba(255,255,255,0.6);
+  font-weight:500;
+}
+
+/* On focus, make underline brighter */
+.oe-input:focus,
+.oe-textarea:focus{
+  border-bottom-color: var(--white);
+}
+
+/* Textarea tweak */
+.oe-textarea{
+  resize: vertical;
+  min-height: 115px;
+  max-width: 100%;
+  line-height:0;
+}
+
+/* Submit button: pill with subtle shadow */
+.oe-submit{
+  margin-top: 28px;
+  background: var(--white);
+  color: var(--purple);
+  border: none;
+  padding: 14px 34px;
+  border-radius: 28px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(11,6,40,0.12);
+  transition: transform .12s ease, box-shadow .12s ease;
+  display:inline-block;
+}
+
+/* Hover effect */
+.oe-submit:hover{ transform: translateY(-2px); box-shadow: 0 12px 28px rgba(11,6,40,0.14); }
+
+/* Decorative dotted square in the bottom-right corner */
+.oe-dots{
+  position: absolute;
+  right: -12px;
+  bottom: -12px;
+  width: 120px;
+  height: 120px;
+  pointer-events: none;
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+  padding: 10px;
+  opacity: 0.95;
+}
+.oe-dots span{
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(circle, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.95) 40%, transparent 40%);
+  box-shadow:
+    18px 0 0 rgba(255,255,255,0.65),
+    36px 0 0 rgba(255,255,255,0.45),
+    0 18px 0 rgba(255,255,255,0.65),
+    18px 18px 0 rgba(255,255,255,0.45),
+    36px 18px 0 rgba(255,255,255,0.25),
+    0 36px 0 rgba(255,255,255,0.45),
+    18px 36px 0 rgba(255,255,255,0.25);
+  border-radius: 50%;
+  opacity: 0.95;
+}
+
+/* Responsive: stack columns on narrower screens */
+@media (max-width: 880px){
+  .oe-card{padding:36px}
+  .oe-form{grid-template-columns: 1fr; gap: 28px}
+  .oe-column-left{order:1}
+  .oe-column-right{order:2}
+  .oe-heading{font-size:32px;margin-bottom:22px}
+  .oe-dots{right:8px;bottom: -8px;transform: scale(.8)}
+  .oe-photo{display:none}
+}
+
+/* Small phones */
+@media (max-width:420px){
+  .oe-card{padding:24px;border-radius:6px}
+  .oe-heading{font-size:24px}
+  .oe-submit{padding:12px 22px}
+}

@@ -25,7 +25,8 @@ function Header() {
       </header>
 
       {/* Centered Heading */}
-      <h1 className="main-heading">Your Dream Event Organize Online.</h1>
+      <h1 className="main-heading">Book Music & Comedy Events
+anywhere in New York.</h1>
     </div>
   );
 }
