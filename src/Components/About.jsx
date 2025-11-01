@@ -21,7 +21,7 @@ Believing that every art form deserves recognition, WeeHo creates opportunities 
 ”
         </p>
 
-        <p className="author">– Nita M Ambani</p>
+        <p className="author">– Nita Ambani</p>
         <p className="designation">Founder & Chairperson</p>
 
         <button className="watch-btn">View More</button>
