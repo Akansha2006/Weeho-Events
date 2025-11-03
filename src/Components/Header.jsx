@@ -1,16 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="hero-section">
-      {/* Navbar */}
       <header className="navbar">
         <div className="logo">
-          <span className="logo-box"><img src="https://weeho12-u21m.vercel.app/assets/weeho-logo-DKyBzIFi.png" alt="Weeho Logo" /></span>
+          <span className="logo-box">
+            <img
+              src="https://weeho12-u21m.vercel.app/assets/weeho-logo-DKyBzIFi.png"
+              alt="Weeho Logo"
+            />
+          </span>
         </div>
 
-        <nav className="nav-links">
+        {/* Hamburger Icon */}
+        <div
+          className={`hamburger ${menuOpen ? "active" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        {/* Navigation Links */}
+        <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Book An Event</a>
@@ -18,16 +35,20 @@ function Header() {
           <a href="#">Contact</a>
         </nav>
 
+        {/* Buttons */}
         <div className="nav-buttons">
           <button className="btn login-btn">Join as a Performer</button>
           <button className="btn signup-btn">Book an event</button>
         </div>
       </header>
 
-      {/* Centered Heading */}
-      <h1 className="main-heading">Book Music & Comedy Events<br />
-<span>anywhere in New York.</span></h1>
-<button className="explore-btn ">Search Events Near Me</button>
+      {/* Hero Content */}
+      <h1 className="main-heading">
+        Book Music & Comedy Events
+        <br />
+        <span>anywhere in New York.</span>
+      </h1>
+      <button className="explore-btn">Search Events Near Me</button>
     </div>
   );
 }

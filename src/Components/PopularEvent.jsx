@@ -1,13 +1,13 @@
 import React from "react";
 import "./PopularEvent.css";
 
-
 export default function PopularEvent() {
   const image =
-    "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80";
+    "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&auto=format&fit=crop&w=632&q=80";
 
   return (
     <div className="pe-page">
+      {/* Header Section */}
       <header className="pe-hero">
         <h1 className="pe-title">Popular Events</h1>
         <p className="pe-subtitle">
@@ -15,6 +15,7 @@ export default function PopularEvent() {
         </p>
       </header>
 
+      {/* Event Section */}
       <main className="pe-container">
         <section className="pe-row">
           <div className="pe-image-wrap">
@@ -36,11 +37,5 @@ export default function PopularEvent() {
         </section>
       </main>
     </div>
-
-
-
-
-
-
   );
 }
