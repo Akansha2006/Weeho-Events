@@ -152,6 +152,7 @@ body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;ba
 @media (max-width: 1100px){
   .pc-card{grid-template-columns:360px 1fr;gap:32px}
   .pc-photo-wrap{width:320px;height:400px}
+  
 }
 
 @media (max-width: 820px){

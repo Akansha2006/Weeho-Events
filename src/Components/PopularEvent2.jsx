@@ -7,6 +7,9 @@ export default function PopularEvent2() {
 
   return (
     <div className="event-page">
+      
+
+      {/* Event Section */}
       <main className="event-container">
         <section className="event-row">
           <div className="event-image-wrap">
@@ -15,12 +18,11 @@ export default function PopularEvent2() {
 
           <div className="event-details">
             <div className="event-badge">Paid</div>
-            <h2 className="event-title">Loachella, NYC</h2>
+            <h2 className="event-event-title">Loachella, NYC</h2>
             <p className="event-desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
             </p>
             <a className="event-link" href="#">
               See Event Details
