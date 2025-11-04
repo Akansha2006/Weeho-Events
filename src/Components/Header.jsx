@@ -37,8 +37,8 @@ function Header() {
 
         {/* Buttons */}
         <div className="nav-buttons">
-          <button className="btn login-btn">Join as a Performer</button>
-          <button className="btn signup-btn">Book an event</button>
+          <button className="btn login-btn">Join As A Performer</button>
+          <button className="btn signup-btn">Book An Event</button>
         </div>
       </header>
 
