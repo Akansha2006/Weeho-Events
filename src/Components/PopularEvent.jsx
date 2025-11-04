@@ -7,13 +7,7 @@ export default function PopularEvent() {
 
   return (
     <div className="pe-page">
-      {/* Header Section */}
-      <header className="pe-hero">
-        <h1 className="pe-title">Popular Events</h1>
-        <p className="pe-subtitle">
-          Here are some of the most popular events in New <br /> York City curated by professionals.
-        </p>
-      </header>
+      
 
       {/* Event Section */}
       <main className="pe-container">
@@ -23,16 +17,18 @@ export default function PopularEvent() {
           </div>
 
           <div className="pe-details">
-            <div className="pe-badge">Paid</div>
-            <h2 className="pe-event-title">Loachella, NYC</h2>
+            {/* <div className="pe-badge">Paid</div> */}
+            <h2 className="pe-event-title">About Weeho</h2>
             <p className="pe-desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              WeeHo – Euphoric Moments is an inclusive and dynamic online platform that celebrates and promotes artistic talent across diverse forms. It provides a digital stage for emerging and passionate artists to perform, connect, and grow.
+
+Believing that every art form deserves recognition, WeeHo creates opportunities for creators to shine beyond boundaries. It supports collaboration, creative expression, and appreciation for authentic talent — empowering artists to gain digital visibility and confidence.
+
+More than a platform, WeeHo is a movement that nurtures creativity, community, and confidence — giving every artist their own euphoric moment.
             </p>
-            <a className="pe-link" href="#">
+            {/* <a className="pe-link" href="#">
               See Event Details
-            </a>
+            </a> */}
           </div>
         </section>
       </main>

@@ -12,6 +12,7 @@ import PopularEvent2 from "./Components/PopularEvent2";
 import PopularCustomers from "./Components/reviews/PopularCustomers";
 import OrganizeEvent from "./Components/reviews/OrganizeEvent";
 import PopularBlogPosts from "./Components/reviews/PopularBlogPosts";
+
 function App() {
   return (
     <div className="app">
@@ -20,6 +21,8 @@ function App() {
       <PopularEvent />
       <PopularEvent1 />
       <PopularEvent2 />
+      <Events />
+      
       <PopularBlogPosts />
       <PopularCustomers />
       <OrganizeEvent />

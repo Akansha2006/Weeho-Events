@@ -14,17 +14,14 @@ export default function PopularEvent1() {
       <main className="per-container">
         <section className="per-row image-right">
           <div className="per-details">
-            <div className="per-badge">Free</div>
-            <h2 className="per-event-title">Loachella, NYC</h2>
+            {/* <div className="per-badge">Free</div> */}
+            <h2 className="per-event-title">Our Vision</h2>
             <p className="per-desc">
-              Experience the most electrifying performances, art installations,
-              and immersive experiences at Electric Dreams. Join thousands of
-              fans in celebrating music, creativity, and good vibes all night
-              long.
+             To create an accessible and supportive platform where creativity thrives, talent is celebrated, and artistic expression is encouraged without boundaries.
             </p>
-            <a className="per-link" href="#">
+            {/* <a className="per-link" href="#">
               See Event Details
-            </a>
+            </a> */}
           </div>
 
           <div className="per-image-wrap">
