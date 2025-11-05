@@ -12,6 +12,7 @@ import PopularEvent2 from "./Components/PopularEvent2";
 import PopularCustomers from "./Components/reviews/PopularCustomers";
 import OrganizeEvent from "./Components/reviews/OrganizeEvent";
 import PopularBlogPosts from "./Components/reviews/PopularBlogPosts";
+import Performers from "./Components/Performers";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
       <PopularEvent1 />
       <PopularEvent2 />
       <Events />
-      
+      <Performers />
       <PopularBlogPosts />
       <PopularCustomers />
       <OrganizeEvent />

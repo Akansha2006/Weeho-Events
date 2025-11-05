@@ -4,7 +4,7 @@ import "./Events.css";
 function Events() {
   const events = [
     {
-      img: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80",
+      img: "https://images.pexels.com/photos/1120162/pexels-photo-1120162.jpeg?cs=srgb&dl=people-lights-festival-1120162.jpg&fm=jpg",
       title: "Music Concert",
     },
     {

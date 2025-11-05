@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.performers-section {
+  width: 100%;
+  background: linear-gradient(180deg, #faf7ff 0%, #f9efff 100%);
+  text-align: center;
+  padding: 60px 0;
+}
+
+.performers-title {
+  font-size: 2rem;
+  color: #8a2be2;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* Wrapper */
+.performer-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Slider */
+.performers-slider {
+  display: flex;
+  gap: 25px;
+  overflow: hidden;
+  width: 90%;
+  justify-content: center;
+}
+
+/* Performer Card */
+.performer-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  width: 22%;
+  min-width: 230px;
+  transition: all 0.3s ease;
+}
+
+.performer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(138, 43, 226, 0.2);
+}
+
+.performer-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.performer-info {
+  padding: 15px;
+}
+
+.performer-info h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 8px 0 5px;
+}
+
+.performer-info p {
+  color: #8a2be2;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  background: white;
+  color: #8a2be2;
+  border: 2px solid #8a2be2;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn:hover {
+  background: #8a2be2;
+  color: white;
+  transform: scale(1.1);
+}
+
+.prev {
+  position: absolute;
+  left: 2%;
+}
+
+.next {
+  position: absolute;
+  right: 2%;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .performers-slider {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .performer-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .performer-card {
+    width: 90%;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+}
