@@ -17,16 +17,18 @@ export default function PopularEvent2() {
           </div>
 
           <div className="event-details">
-            <div className="event-badge">Paid</div>
-            <h2 className="event-event-title">Loachella, NYC</h2>
+            {/* <div className="event-badge">Paid</div> */}
+            <h2 className="event-event-title">Our Mission</h2>
             <p className="event-desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              To provide an open, flexible and inclusive space for budding and passionate artists to perform. 
+	To support digital recognition and growth for young talents. 
+	To promote collaboration and cross-learning among artists and institutions. 
+To foster a culture of appreciation for diverse and authentic art forms. 
+
             </p>
-            <a className="event-link" href="#">
+            {/* <a className="event-link" href="#">
               See Event Details
-            </a>
+            </a> */}
           </div>
         </section>
       </main>

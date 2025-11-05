@@ -30,6 +30,7 @@ body {
 }
 
 .pe-title {
+  
   font-size: 3rem;
   line-height: 1.1;
   color: var(--dark-blue);
