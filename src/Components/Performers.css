@@ -5,14 +5,14 @@ body {
 
 .performers-section {
   width: 100%;
-  background: linear-gradient(180deg, #faf7ff 0%, #f9efff 100%);
+  background: white;
   text-align: center;
   padding: 60px 0;
 }
 
 .performers-title {
-  font-size: 2rem;
-  color: #8a2be2;
+  font-size: 2.5rem;
+  color: var(--dark-blue);
   font-weight: 700;
   margin-bottom: 40px;
 }
@@ -67,7 +67,7 @@ body {
 }
 
 .performer-info p {
-  color: #8a2be2;
+  color: var(--dark-blue);
   font-weight: 500;
   font-size: 0.95rem;
 }
@@ -75,8 +75,8 @@ body {
 /* Navigation Buttons */
 .nav-btn {
   background: white;
-  color: #8a2be2;
-  border: 2px solid #8a2be2;
+  color: var(--dark-blue);
+  border: 2px solid var(--dark-blue);
   font-size: 1.5rem;
   border-radius: 50%;
   width: 45px;
