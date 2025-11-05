@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // ✅ Add this
 import Header from "./Components/Header";
 
 import "./App.css";
@@ -13,28 +14,40 @@ import PopularCustomers from "./Components/reviews/PopularCustomers";
 import OrganizeEvent from "./Components/reviews/OrganizeEvent";
 import PopularBlogPosts from "./Components/reviews/PopularBlogPosts";
 import Performers from "./Components/Performers";
+import PerformerPage from "./Components/PerformerPage"; // ✅ Add this
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      {/* <About /> */}
-      <PopularEvent />
-      <PopularEvent1 />
-      <PopularEvent2 />
-      <Events />
-      <Performers />
-      <PopularBlogPosts />
-      <PopularCustomers />
-      <OrganizeEvent />
-      {/* <Stats /> */}
-      {/* <Events /> */}
-      <Footer />
+    <Router>
       
-    
-      
-    </div>
-    );
+      <Routes>
+        {/* ✅ Main homepage route */}
+        <Route
+          path="/"
+          element={
+            <>
+            <Header />
+              {/* <About /> */}
+              <PopularEvent />
+              <PopularEvent1 />
+              <PopularEvent2 />
+              <Events />
+              <Performers />
+              <PopularBlogPosts />
+              <PopularCustomers />
+              <OrganizeEvent />
+              {/* <Stats /> */}
+              {/* <Events /> */}
+              <Footer />
+            </>
+          }
+        />
+
+        {/* ✅ Performer profile route */}
+        <Route path="/performer/:name" element={<PerformerPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

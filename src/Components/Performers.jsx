@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Performers.css";
 
 function Performers() {
@@ -36,6 +37,7 @@ function Performers() {
   ];
 
   const [index, setIndex] = useState(0);
+  const navigate = useNavigate();
 
   const nextSlide = () => {
     if (index < performers.length - 4) setIndex(index + 1);
@@ -43,6 +45,11 @@ function Performers() {
 
   const prevSlide = () => {
     if (index > 0) setIndex(index - 1);
+  };
+
+  const openPerformer = (name) => {
+    const formattedName = name.replace(/\s+/g, "-");
+    navigate(`/performer/${formattedName}`);
   };
 
   return (
@@ -56,7 +63,11 @@ function Performers() {
 
         <div className="performers-slider">
           {performers.slice(index, index + 4).map((performer, i) => (
-            <div className="performer-card" key={i}>
+            <div
+              className="performer-card"
+              key={i}
+              onClick={() => openPerformer(performer.name)}
+            >
               <div className="performer-img">
                 <img src={performer.img} alt={performer.name} />
               </div>
