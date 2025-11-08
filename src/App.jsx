@@ -8,8 +8,9 @@ import Stats from "./Components/Stats";
 import Events from "./Components/Events";
 import Footer from "./Components/Footer";
 import PopularEvent from "./Components/PopularEvent";
-import PopularEvent1 from "./Components/PopularEvent1";
-import PopularEvent2 from "./Components/PopularEvent2";
+// import PopularEvent1 from "./Components/PopularEvent1";
+// import PopularEvent2 from "./Components/PopularEvent2";
+import WeehoDetails from "./Components/WeehoDetails";
 import PopularCustomers from "./Components/reviews/PopularCustomers";
 import OrganizeEvent from "./Components/reviews/OrganizeEvent";
 import PopularBlogPosts from "./Components/reviews/PopularBlogPosts";
@@ -31,10 +32,10 @@ function App() {
             <Header />
              
               <PopularEvent />
-              <PopularEvent1 />
-              <PopularEvent2 />
-              <Events />
-              <Performers />
+              {/* <PopularEvent1 /> */}
+              {/* <PopularEvent2 /> */}
+              {/* <Events /> */}
+              {/* <Performers /> */}
               <PopularBlogPosts />
               <PopularCustomers />
               {/* <OrganizeEvent /> */}
@@ -48,6 +49,8 @@ function App() {
         {/* ✅ Performer profile route */}
         <Route path="/performer/:name" element={<PerformerPage />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path="/weeho-details" element={<WeehoDetails />} />
+
 
       </Routes>
     </Router>
