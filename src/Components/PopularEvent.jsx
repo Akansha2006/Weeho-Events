@@ -1,10 +1,8 @@
 import React from "react";
 import "./PopularEvent.css";
+import about from "../assets/about img.jpg";
 
 export default function PopularEvent() {
-  const image =
-    "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&auto=format&fit=crop&w=632&q=80";
-
   return (
     <div className="pe-page">
       
@@ -13,7 +11,7 @@ export default function PopularEvent() {
       <main className="pe-container">
         <section className="pe-row">
           <div className="pe-image-wrap">
-            <img className="pe-image" src={image} alt="Loachella, NYC" />
+            <img className="pe-image" src={about} alt="Loachella, NYC" />
           </div>
 
           <div className="pe-details">

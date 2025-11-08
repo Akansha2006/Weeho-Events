@@ -15,6 +15,8 @@ import OrganizeEvent from "./Components/reviews/OrganizeEvent";
 import PopularBlogPosts from "./Components/reviews/PopularBlogPosts";
 import Performers from "./Components/Performers";
 import PerformerPage from "./Components/PerformerPage"; // ✅ Add this
+import BlogDetails from "./Components/reviews/BlogDetails";
+
 
 function App() {
   return (
@@ -35,7 +37,7 @@ function App() {
               <Performers />
               <PopularBlogPosts />
               <PopularCustomers />
-              <OrganizeEvent />
+              {/* <OrganizeEvent /> */}
               {/* <Stats /> */}
               {/* <Events /> */}
               <Footer />
@@ -45,6 +47,8 @@ function App() {
 
         {/* ✅ Performer profile route */}
         <Route path="/performer/:name" element={<PerformerPage />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />
+
       </Routes>
     </Router>
   );

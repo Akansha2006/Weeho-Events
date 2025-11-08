@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Performers.css";
+import performer1 from "../assets/performer1.jpg";
+import performer2 from "../assets/performer2.jpg";
 
 function Performers() {
   const performers = [
+  {
+    img: performer1,
+    name: "Tanisha Bansal", // ❌ pehle space hata do
+    role: "Storyteller",
+  },
     {
-      img: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80",
-      name: "Ariana Blake",
-      role: "Singer & Songwriter",
-    },
-    {
-      img: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
-      name: "Liam Carter",
-      role: "Professional Dancer",
+      img: performer2,
+      name: "Anurag Suter",
+      role: "singer",
     },
     {
       img: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80",

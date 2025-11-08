@@ -1,10 +1,9 @@
 import React from "react";
 import "./PopularEvent2.css";
+import mission from "../assets/mission img.jpg";
 
 export default function PopularEvent2() {
-  const image =
-    "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80";
-
+  
   return (
     <div className="event-page">
       
@@ -13,7 +12,7 @@ export default function PopularEvent2() {
       <main className="event-container">
         <section className="event-row">
           <div className="event-image-wrap">
-            <img className="event-image" src={image} alt="Loachella, NYC" />
+            <img className="event-image" src={mission} alt="Loachella, NYC" />
           </div>
 
           <div className="event-details">

@@ -1,36 +1,24 @@
 import React, { useState } from "react";
 import "./PopularCustomers.css";
+import performer1 from "../../assets/performer1.jpg";
+import performer2 from "../../assets/performer2.jpg";
 
-/**
- * PopularCustomers.jsx
- *
- * Single component + CSS for a testimonial slider that matches the provided image.
- * - Place this file at src/PopularCustomers.jsx
- * - Place the CSS in src/PopularCustomers.css (provided below)
- *
- * Usage:
- *   import PopularCustomers from "./PopularCustomers";
- *   <PopularCustomers />
- *
- * This component is self-contained and uses simple CSS only (no external slider libs).
- */
+
 
 const TESTIMONIALS = [
   {
-    name: "Adam Cuppy",
-    role: "Founder, EventsNYC",
+    name: "Tanisha Bansal",
+    role: " Storyteller",
     quote:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-    image:
-      "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
+      "It was a delightful experience sharing my story at the platform of WeeHo. The audience’s warmth and WeeHo’s amazing platform made storytelling feel truly magical. Grateful to be part of such an inspiring space that celebrates voices and visions alike!",
+    image: performer1,
   },
   {
-    name: "Priya Shah",
-    role: "Marketing Lead, CityShows",
+    name: "Anurag Suter",
+    role: "singer ",
     quote:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+      "As a musician, I always believed that you truly connect with music only when it’s felt live. But performing for WeeHo on Zoom changed that for me — it showed how music can transcend boundaries. The energy and warmth from everyone made the session so lively and fun.",
+    image: performer2,
   },
   {
     name: "Marcus Lee",

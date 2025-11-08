@@ -1,9 +1,9 @@
 import React from "react";
 import "./PopularEvent1.css";
+import vission from "../assets/vission img.jpg";
 
 export default function PopularEvent1() {
-  const image =
-    "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80";
+  
 
   return (
     <div className="per-page">
@@ -25,7 +25,7 @@ export default function PopularEvent1() {
           </div>
 
           <div className="per-image-wrap">
-            <img className="per-image" src={image} alt="Electric Dreams" />
+            <img className="per-image" src={vission} alt="Electric Dreams" />
           </div>
         </section>
       </main>

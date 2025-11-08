@@ -1,19 +1,21 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./PerformerPage.css";
+import performer1 from "../assets/performer1.jpg";
+import performer2 from "../assets/performer2.jpg";
 
 const performerData = [
   {
-    name: "Ariana Blake",
-    role: "Singer & Songwriter",
-    img: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80",
-    desc: "Ariana Blake is a soulful singer and songwriter who lights up every stage she performs on.",
+    name: "Tanisha Bansal",
+    role: " Storyteller",
+    img: performer1,
+    desc: "Tanisha Bansal From Delhi, pursuing a Bachelor’s in Management Studies from the University of Delhi. Founder of KAHAANI and a passionate storyteller.",
   },
   {
-    name: "Liam Carter",
-    role: "Professional Dancer",
-    img: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
-    desc: "Liam Carter’s electrifying dance moves create unforgettable moments in every event.",
+    name: "Anurag Suter",
+    role: "singer ",
+    img: performer2,
+    desc: "Anurag Suter from Chhattisgarh — an aspiring music composer and singer, serving as the General Secretary of Swarang, the Music Society of SGTB Khalsa College.",
   },
   {
     name: "Sofia Lee",
@@ -46,8 +48,8 @@ export default function PerformerPage() {
   const navigate = useNavigate();
 
   const performer = performerData.find(
-    (p) => p.name.replace(/\s+/g, "-") === name
-  );
+  (p) => p.name.trim().replace(/\s+/g, "-") === name
+);
 
   if (!performer)
     return <h2 style={{ textAlign: "center", marginTop: "100px" }}>Performer not found</h2>;

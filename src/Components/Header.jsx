@@ -37,8 +37,8 @@ function Header() {
 
         {/* Buttons */}
         <div className="nav-buttons">
-          <button className="btn login-btn">Join As A Performer</button>
-          <button className="btn signup-btn">Book An Event</button>
+          <button className="btn login-btn" onClick={() => window.open("https://forms.gle/81fXY1koiUhsJnng7", "_blank")}>Join As A Performer</button>
+          <button className="btn signup-btn" onClick={() => window.open("https://forms.gle/JqDMVxuxpYvHq34V8", "_blank")}>Book An Event</button>
         </div>
       </header>
 

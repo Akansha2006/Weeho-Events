@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import "./Events.css";
+import event1 from "../assets/event1.jpg";
+import event2 from "../assets/event2.jpg";
 
 function Events() {
   const events = [
     {
-      img: "https://images.pexels.com/photos/1120162/pexels-photo-1120162.jpeg?cs=srgb&dl=people-lights-festival-1120162.jpg&fm=jpg",
+      img: event1,
       title: "Music Concert",
     },
     {
-      img: "https://img.freepik.com/premium-photo/dynamic-dance-performance-stage-vibrant-colors_934877-3559.jpg?w=996",
+      img: event2,
       title: "Dancing Event",
     },
     {
