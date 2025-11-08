@@ -1,0 +1,43 @@
+.blog-detail {
+  max-width: 800px;
+  margin: 80px auto; /* center horizontally and give top-bottom space */
+  padding: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center; /* center text and image */
+}
+
+.blog-detail-img {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+
+.blog-detail-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--dark-blue);
+}
+
+.blog-detail-content {
+  white-space: pre-line;
+  color: #333;
+  line-height: 1.8;
+  text-align: justify; /* make paragraph clean and readable */
+  margin-top: 10px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #7b2fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}

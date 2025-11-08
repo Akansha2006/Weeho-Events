@@ -7,11 +7,11 @@ function Events() {
   const events = [
     {
       img: event1,
-      title: "Music Concert",
+      title: "Musc Event",
     },
     {
       img: event2,
-      title: "Dancing Event",
+      title: "Singing Event",
     },
     {
       img: "https://media.istockphoto.com/id/936750120/photo/corporate-business-meeting.jpg?s=170667a&w=0&k=20&c=SXr_ObJ-DjHhNu2mWLjB-SXVst1pclk92pPlrsF8asg=",

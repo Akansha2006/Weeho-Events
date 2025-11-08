@@ -95,8 +95,8 @@ body {
   justify-content: flex-end;
 }
 .pc-photo-wrap {
-  width: 360px;
-  height: 360px;
+  width: 330px;
+  height: 330px;
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(11, 25, 40, 0.06);

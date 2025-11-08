@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./PopularBlogPosts.css";
+import "./BlogDetails.css";
 
 export default function BlogDetails() {
   const { id } = useParams();
@@ -64,7 +65,7 @@ It was not just an event — it was a celebration of expression, awareness, and 
 
   return (
     <div className="blog-detail">
-      <button className="back-btn" onClick={() => navigate(-1)}>
+      <button className="back-button" onClick={() => navigate(-1)}>
         ← Back
       </button>
       <img src={blog.image} alt={blog.title} className="blog-detail-img" />

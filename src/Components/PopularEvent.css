@@ -112,7 +112,8 @@ body {
 /* Link */
 .pe-link {
   display: inline-block;
-  color: var(--purple);
+  background-color: rgb(193, 199, 199);
+  color: var(--dark-blue);
   font-weight: 700;
   text-decoration: none;
   transition: color 0.3s ease;
