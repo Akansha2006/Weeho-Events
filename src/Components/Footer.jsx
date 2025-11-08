@@ -9,9 +9,9 @@ function Footer() {
         {/* Contact Info */}
         <div className="footer-box">
           <h3>Contact Us</h3>
-          <p>📍 123 Main Street, New Delhi, India</p>
-          <p>📞 +91 98765 43210</p>
-          <p>📧 info@weeho.com</p>
+          <p>📍 Simtrak Solutions, JBS Haldane Avenue,Kolkata 700046</p>
+          <p>📞 +919230621729</p>
+          <p>📧 events.weeho@gmail.com</p>
          <div className="footer-box">
           {/* <h3>Follow Us</h3> */}
           <div className="social-icons">
@@ -35,40 +35,10 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Social Media */}
-        {/* <div className="footer-box">
-          <h3>Follow Us</h3>
-          <div className="social-icons">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaLinkedinIn /></a>
-            <a href="#"><FaTwitter /></a>
-          </div>
-        </div> */}
+        
 
 
-         {/* products */}
-        <div className="footer-box">
-          <h3>Product</h3>
-          <ul>
-            <li><a href="#">Log In</a></li>
-            <li><a href="#">Personal</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">Team</a></li>
-          </ul>
-        </div>
-  
-
-        {/* Legal */}
-        <div className="footer-box">
-          <h3>Legal</h3>
-          <ul>
-            <li><a href="#">GDPR</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Conditions</a></li>
-            <li><a href="#">Disclaimer</a></li>
-          </ul>
-        </div>
+      
       </div>
 
       <div className="footer-bottom">

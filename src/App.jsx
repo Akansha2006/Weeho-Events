@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // âœ
 import Header from "./Components/Header";
 
 import "./App.css";
-import About from "./Components/About";
+
 import Stats from "./Components/Stats";
 import Events from "./Components/Events";
 import Footer from "./Components/Footer";
@@ -29,7 +29,7 @@ function App() {
           element={
             <>
             <Header />
-              {/* <About /> */}
+             
               <PopularEvent />
               <PopularEvent1 />
               <PopularEvent2 />
