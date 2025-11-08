@@ -15,7 +15,7 @@ function Footer() {
          <div className="footer-box">
           {/* <h3>Follow Us</h3> */}
           <div className="social-icons">
-            <a href="#"><FaWhatsapp/></a>
+            <a href="https://wa.me/919230621729?text=Hello%20Weeho%20Team%2C%20I%20want%20to%20know%20more%20about%20your%20events."><FaWhatsapp/></a>
             <a href="https://www.instagram.com/weeho_events/"><FaInstagram /></a>
             <a href="https://www.linkedin.com/company/98126149/admin/page-posts/published/"><FaLinkedinIn /></a>
             <a href="https://www.facebook.com/weehoevents/"><FaFacebookF /></a>
