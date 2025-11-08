@@ -51,13 +51,16 @@
 }
 
 .blog-link {
-  color: #7b2fff;
-  font-weight: 600;
+  display: inline-block;
+  background-color: rgb(193, 199, 199);
+  color: var(--dark-blue);
+  font-weight: 700;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .blog-link:hover {
-  text-decoration: underline;
+  color: #4a00e0;
 }
 
 

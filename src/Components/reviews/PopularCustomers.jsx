@@ -15,7 +15,7 @@ const TESTIMONIALS = [
   },
   {
     name: "Anurag Suter",
-    role: "singer ",
+    role: "Singer",
     quote:
       "As a musician, I always believed that you truly connect with music only when it’s felt live. But performing for WeeHo on Zoom changed that for me — it showed how music can transcend boundaries. The energy and warmth from everyone made the session so lively and fun.",
     image: performer2,
@@ -40,7 +40,7 @@ export default function PopularCustomers() {
 
   return (
     <section className="pc-section">
-      <h1 className="pc-title">Our Awesome Customers</h1>
+      <h1 className="pc-title">Our Awesome Performers</h1>
 
       <div className="pc-slider">
         <button

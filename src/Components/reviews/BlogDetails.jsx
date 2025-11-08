@@ -8,20 +8,7 @@ export default function BlogDetails() {
   const navigate = useNavigate();
 
   const blogs = [
-    {
-      id: 1,
-      category: "Event Tips",
-      title: "A Night to Remember: Weeho's Magical Music Event",
-      image:
-        "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-      content: `
-      Music isn’t just sound — it’s emotion. On November 19, 2024, Weeho hosted an unforgettable musical evening featuring the rising talent, Anushka Sharma — a B.Tech student and passionate singer from Delhi.
-
-      Her soulful performances of “Kaun Tujhe,” “Hasi,” and “Raabta” mesmerized the audience. She even surprised everyone with an original composition, showcasing her creativity and passion. From classical roots to modern melodies, Anushka proved music truly unites all hearts.
-
-      The night wasn’t just a performance; it was a celebration of talent, dreams, and the magic of music. Weeho continues to be the stage where creativity lives and shines.
-      `,
-    },
+    
      {
       id: 1,
       category: "Event Tips",
