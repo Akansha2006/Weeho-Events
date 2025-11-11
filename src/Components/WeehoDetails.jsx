@@ -1,9 +1,9 @@
 import React from "react";
 import PopularEvent1 from "./PopularEvent1";
 import PopularEvent2 from "./PopularEvent2";
-import Events from "./Events";
-import Performers from "./Performers";
-import PerformerPage from "./PerformerPage"; // ✅ Add this
+
+
+
 
 
 import Footer from "./Footer";
@@ -14,8 +14,8 @@ export default function WeehoDetails() {
     <div className="weeho-page">
       <PopularEvent1 />
       <PopularEvent2 />
-      <Events />
-       <Performers />
+     
+       
       
       <Footer />
     </div>

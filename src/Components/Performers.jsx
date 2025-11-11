@@ -56,7 +56,7 @@ function Performers() {
 
   return (
     <div className="performers-section">
-      <h2 className="performers-title">Our Star Performers</h2>
+      <h2 className="performers-title">Our Performers</h2>
 
       <div className="performer-slider-wrapper">
         <button className="nav-btn prev" onClick={prevSlide}>

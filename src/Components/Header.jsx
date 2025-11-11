@@ -31,6 +31,7 @@ function Header() {
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Book An Event</a>
+          <a href="#">Our Team</a>
           <a href="#">Blog</a>
           <a href="#">Contact</a>
         </nav>

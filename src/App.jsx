@@ -34,8 +34,8 @@ function App() {
               <PopularEvent />
               {/* <PopularEvent1 /> */}
               {/* <PopularEvent2 /> */}
-              {/* <Events /> */}
-              {/* <Performers /> */}
+              <Events />
+              <Performers />
               <PopularBlogPosts />
               <PopularCustomers />
               {/* <OrganizeEvent /> */}
