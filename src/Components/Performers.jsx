@@ -103,6 +103,15 @@ function Performers() {
                 <h2>{selectedPerformer.name}</h2>
                 <h4>{selectedPerformer.role}</h4>
                 <p>{selectedPerformer.desc}</p>
+                <button className="ytb-performance"><a
+  href="https://youtube.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="see-performance-btn"
+>
+  See Performance
+</a></button>
+
               </div>
             </div>
           </div>
