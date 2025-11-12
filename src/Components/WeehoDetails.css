@@ -41,3 +41,20 @@
     margin: 40px 0;
   }
 }
+.back-About-btn {
+  display: block;           /* Button ko block element banata hai */
+  margin: 20px auto -30px;  /* Center karne ke liye auto left-right margins */
+  background-color: #182841;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+
+.back-About-btn:hover {
+  background-color: #d46b2d;
+}

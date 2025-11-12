@@ -82,6 +82,24 @@
   transition: 0.3s;
 }
 
+
+.back-Team-btn {
+  background-color: #182841;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  transition: background 0.3s ease;
+}
+
+.back-Team-btn:hover {
+  background-color: #d46b2d;
+}
+
+
 @media (max-width: 768px) {
   .ourteam2-card {
     width: 90%;

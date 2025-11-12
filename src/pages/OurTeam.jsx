@@ -1,8 +1,11 @@
 import React from "react";
 import "./OurTeam.css";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export default function OurTeam2() {
+  const navigate = useNavigate();
+
   const teamList = [
     {
       name: "Anita Goyal",
@@ -64,12 +67,21 @@ export default function OurTeam2() {
 
   return (
     <div className="ourteam2-section">
+      {/* 🔙 Back Button */}
+      <button className="back-Team-btn" onClick={() => navigate(-1)}>
+        ← Back
+      </button>
+
       <h1 className="ourteam2-title">Meet Our Team</h1>
       <div className="ourteam2-container">
         {teamList.map((member, i) => (
           <div className="ourteam2-card" key={i}>
             <div className="ourteam2-img-wrap">
-              <img src={member.image} alt={member.name} className="ourteam2-img" />
+              <img
+                src={member.image}
+                alt={member.name}
+                className="ourteam2-img"
+              />
             </div>
             <h3 className="ourteam2-name">{member.name}</h3>
             <p className="ourteam2-about">{member.about}</p>
