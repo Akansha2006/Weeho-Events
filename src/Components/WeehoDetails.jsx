@@ -5,16 +5,15 @@ import PopularEvent2 from "./PopularEvent2";
 import ObjectivesSection from "./ObjectivesSection";
 import Footer from "./Footer";
 import "./WeehoDetails.css";
+import Header from "./Header"
 
 export default function WeehoDetails() {
   const navigate = useNavigate();
 
   return (
     <div className="weeho-page">
-      {/* 🔙 Back Button */}
-      <button className="back-About-btn" onClick={() => navigate(-1)}>
-        ← Back
-      </button>
+      <Header/>
+      
 
       <ObjectivesSection />
       <PopularEvent1 />
