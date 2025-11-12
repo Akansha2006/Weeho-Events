@@ -60,78 +60,72 @@
   line-height: 1.4;
 }
 
-/* Popup styles */
-.blog-popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  padding: 20px;
-}
 
-.blog-popup {
+
+
+
+
+
+
+/* Full-page clean layout */
+.blog-details-page {
+  width: 100%;
+  min-height: 100vh;
   background: #fff;
-  padding: 30px;
-  border-radius: 15px;
-  max-width: 600px;
-  width: 100%;
-  text-align: left;
-  position: relative;
-  animation: popupFade 0.3s ease;
-  overflow-y: auto;
-  max-height: 90vh;
+  padding: 60px 12%;
+  overflow-y: auto; /* allow scroll but hide bar */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-@keyframes popupFade {
-  from { opacity: 0; transform: scale(0.9); }
-  to { opacity: 1; transform: scale(1); }
+/* Hide scrollbar but allow scroll */
+.blog-details-page::-webkit-scrollbar {
+  display: none;
+}
+.blog-details-page {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.popup-img {
-  width: 500px;
-  height: 200px;
-  object-fit: contain;
-  border-radius: 10px;
-  margin-bottom: 15px;
+/* Back button */
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: #1f2d5a;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.back-btn:hover {
+  color: #e74c3c;
 }
 
-.popup-title {
-  font-size: 1.6rem;
+/* Blog image */
+.blog-details-img {
+  width: 400px;
+  height: 400px;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+/* Title and text */
+.blog-details-title {
+  font-size: 2rem;
   font-weight: 700;
   color: #1f2d5a;
-  margin-bottom: 5px;
-}
-
-.popup-category {
-  font-weight: 600;
-  color: #6b7280;
   margin-bottom: 10px;
 }
 
-.popup-content {
-  font-size: 1rem;
+.blog-details-category {
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.blog-details-content {
+  font-size: 1.1rem;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.7;
   white-space: pre-line;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 1.2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #444;
-}
-
-.close-btn:hover {
-  color: #e74c3c;
 }

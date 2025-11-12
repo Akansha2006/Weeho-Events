@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./PopularBlogPosts.css";
 
 export default function PopularBlogPosts() {
-  const [selectedBlog, setSelectedBlog] = useState(null);
+  const navigate = useNavigate();
 
   const blogs = [
     {
@@ -57,7 +58,7 @@ A group of talented women is taking the global music scene by storm! Their uniqu
           <div
             key={blog.id}
             className="blog-card"
-            onClick={() => setSelectedBlog(blog)}
+            onClick={() => navigate(`/blog/${blog.id}`, { state: blog })} // ✅ open new page
           >
             <img src={blog.image} alt={blog.title} className="blog-img" />
             <p className="blog-category">{blog.category}</p>
@@ -65,28 +66,6 @@ A group of talented women is taking the global music scene by storm! Their uniqu
           </div>
         ))}
       </div>
-
-      {/* Popup Modal */}
-      {selectedBlog && (
-        <div className="blog-popup-overlay" onClick={() => setSelectedBlog(null)}>
-          <div
-            className="blog-popup"
-            onClick={(e) => e.stopPropagation()} // prevent closing on inner click
-          >
-            <button className="close-btn" onClick={() => setSelectedBlog(null)}>
-              ✖
-            </button>
-            <img
-              src={selectedBlog.image}
-              alt={selectedBlog.title}
-              className="popup-img"
-            />
-            <h2 className="popup-title">{selectedBlog.title}</h2>
-            <p className="popup-category">{selectedBlog.category}</p>
-            <p className="popup-content">{selectedBlog.content}</p>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
