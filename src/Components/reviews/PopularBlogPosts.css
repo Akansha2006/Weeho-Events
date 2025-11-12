@@ -72,7 +72,7 @@
   width: 100%;
   min-height: 100vh;
   background: #fff;
-  padding: 60px 12%;
+  padding: 40px 25%;
   overflow-y: auto; /* allow scroll but hide bar */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -101,7 +101,7 @@
 
 /* Blog image */
 .blog-details-img {
-  width: 400px;
+  width: 800px;
   height: 400px;
   max-height: 700px;
   object-fit: cover;
