@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // ✅ Add this
 import Header from "./Components/Header";
+import OurTeam from "./pages/OurTeam";
 
 import "./App.css";
 
@@ -50,6 +51,7 @@ function App() {
         <Route path="/performer/:name" element={<PerformerPage />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path="/weeho-details" element={<WeehoDetails />} />
+        <Route path="/our-team" element={<OurTeam />} />
 
 
       </Routes>

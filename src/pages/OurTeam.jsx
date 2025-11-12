@@ -1,0 +1,87 @@
+import React from "react";
+import "./OurTeam.css";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+
+export default function OurTeam2() {
+  const teamList = [
+    {
+      name: "Anita Goyal",
+      role: "Creative Leader",
+      image: "https://via.placeholder.com/200x200",
+      about:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    },
+    {
+      name: "Amrita Kaur",
+      role: "Sales Manager",
+      image: "https://via.placeholder.com/200x200",
+      about:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    },
+    {
+      name: "Akhil Sharma",
+      role: "Web Developer",
+      image: "https://via.placeholder.com/200x200",
+      about:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    },
+    {
+      name: "Devansh Verma",
+      role: "Web Designer",
+      image: "https://via.placeholder.com/200x200",
+      about:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    },
+    {
+      name: "Tanisha Bansal",
+      role: "Content Strategist",
+      image: "https://via.placeholder.com/200x200",
+      about:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    },
+    {
+      name: "Aman Gupta",
+      role: "Marketing Head",
+      image: "https://via.placeholder.com/200x200",
+      about:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    },
+    {
+      name: "Kriti Singh",
+      role: "UI/UX Designer",
+      image: "https://via.placeholder.com/200x200",
+      about:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    },
+    {
+      name: "Rohan Mehta",
+      role: "App Developer",
+      image: "https://via.placeholder.com/200x200",
+      about:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    },
+  ];
+
+  return (
+    <div className="ourteam2-section">
+      <h1 className="ourteam2-title">Meet Our Team</h1>
+      <div className="ourteam2-container">
+        {teamList.map((member, i) => (
+          <div className="ourteam2-card" key={i}>
+            <div className="ourteam2-img-wrap">
+              <img src={member.image} alt={member.name} className="ourteam2-img" />
+            </div>
+            <h3 className="ourteam2-name">{member.name}</h3>
+            <p className="ourteam2-about">{member.about}</p>
+            <h4 className="ourteam2-role">{member.role}</h4>
+            <div className="ourteam2-social">
+              <FaFacebookF />
+              <FaTwitter />
+              <FaInstagram />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

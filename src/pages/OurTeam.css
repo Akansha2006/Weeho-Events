@@ -1,0 +1,89 @@
+.ourteam2-section {
+  background: #f7f7f7;
+  text-align: center;
+  padding: 80px 10%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ourteam2-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d46b2d;
+  margin-bottom: 50px;
+}
+
+.ourteam2-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.ourteam2-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 40px 20px;
+  width: 260px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.ourteam2-card:hover {
+  transform: translateY(-8px);
+}
+
+.ourteam2-img-wrap {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 3px solid #d46b2d;
+}
+
+.ourteam2-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ourteam2-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.ourteam2-about {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.ourteam2-role {
+  font-weight: 600;
+  color: #1f2d5a;
+  margin-bottom: 15px;
+}
+
+.ourteam2-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 15px;
+  color: #000;
+  font-size: 1rem;
+}
+
+.ourteam2-social svg:hover {
+  color: #d46b2d;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .ourteam2-card {
+    width: 90%;
+  }
+}
