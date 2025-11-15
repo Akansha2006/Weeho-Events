@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import "./Footer.css";
 
 function Footer() {
@@ -19,6 +19,8 @@ function Footer() {
             <a href="https://www.instagram.com/weeho_events/"><FaInstagram /></a>
             <a href="https://www.linkedin.com/company/98126149/admin/page-posts/published/"><FaLinkedinIn /></a>
             <a href="https://www.facebook.com/weehoevents/"><FaFacebookF /></a>
+            <a href="https://www.youtube.com/weehoevents/"><FaYoutube/></a>
+            
             
           </div>
         </div>
