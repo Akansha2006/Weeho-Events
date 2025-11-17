@@ -9,7 +9,7 @@ function Footer() {
         {/* Contact Info */}
         <div className="footer-box">
           <h3>Contact Us</h3>
-          <p>📍 Simtrak Solutions, JBS Haldane Avenue,Kolkata 700046</p>
+          
           <p>📞 +919230621729</p>
           <p>📧 events.weeho@gmail.com</p>
          <div className="footer-box">

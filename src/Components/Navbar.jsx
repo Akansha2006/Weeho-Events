@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Header.css";
+import "./Navbar.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -7,12 +7,10 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="logo">
-        <span className="logo-box">
-          <img
-            src="https://weeho12-u21m.vercel.app/assets/weeho-logo-DKyBzIFi.png"
-            alt="Weeho Logo"
-          />
-        </span>
+        <img
+          src="https://weeho12-u21m.vercel.app/assets/weeho-logo-DKyBzIFi.png"
+          alt="Weeho Logo"
+        />
       </div>
 
       {/* Hamburger Icon */}
@@ -25,7 +23,7 @@ function Navbar() {
         <span></span>
       </div>
 
-      {/* Navigation Links */}
+      {/* Nav Links */}
       <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
         <a href="/">Home</a>
         <a href="#">About</a>

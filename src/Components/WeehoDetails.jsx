@@ -5,14 +5,14 @@ import PopularEvent2 from "./PopularEvent2";
 import ObjectivesSection from "./ObjectivesSection";
 import Footer from "./Footer";
 import "./WeehoDetails.css";
-import Header from "./Header"
+import Navbar from "./Navbar"
 
 export default function WeehoDetails() {
   const navigate = useNavigate();
 
   return (
     <div className="weeho-page">
-      <Header/>
+      <Navbar/>
       
 
       <ObjectivesSection />
