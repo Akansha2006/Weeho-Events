@@ -6,7 +6,10 @@ import OurTeam from "./pages/OurTeam";
 import "./App.css";
 
 import Stats from "./Components/Stats";
-import Events from "./Components/Events";
+import Event_Types from "./Components/Event_Types";
+import UniqueEventSlider from "./Components/UniqueEventSlider";
+
+
 import Footer from "./Components/Footer";
 import PopularEvent from "./Components/PopularEvent";
 // import PopularEvent1 from "./Components/PopularEvent1";
@@ -33,15 +36,14 @@ function App() {
             <Header />
              
               <PopularEvent />
-              {/* <PopularEvent1 /> */}
-              {/* <PopularEvent2 /> */}
-              <Events />
+             
+              <Event_Types />
               <Performers />
+            <UniqueEventSlider />
+
               <PopularBlogPosts />
               <PopularCustomers />
-              {/* <OrganizeEvent /> */}
-              {/* <Stats /> */}
-              {/* <Events /> */}
+              
               <Footer />
             </>
           }

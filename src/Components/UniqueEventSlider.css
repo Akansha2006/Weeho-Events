@@ -4,32 +4,30 @@ body {
 }
 
 /* Section */
-.events-section {
+.ue-section {
   width: 100%;
-  /* padding: 60px 8%; */
   padding-bottom: 30px;
   background: white;
   text-align: center;
 }
 
-.section-title {
+.ue-title {
   font-size: 2.5rem;
-  
   color: var(--dark-blue);
   font-weight: 700;
   margin-bottom: 40px;
 }
 
-/* Slider wrapper */
-.slider-wrapper {
+/* Wrapper */
+.ue-wrapper {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Slider content */
-.events-slider {
+/* Slider */
+.ue-slider {
   display: flex;
   gap: 25px;
   overflow: hidden;
@@ -37,8 +35,8 @@ body {
   justify-content: center;
 }
 
-/* Event card */
-.event-card {
+/* Cards */
+.ue-card {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -47,26 +45,26 @@ body {
   transition: transform 0.3s ease;
 }
 
-.event-card:hover {
+.ue-card:hover {
   transform: translateY(-5px);
 }
 
-.event-card img {
+.ue-card img {
   width: 100%;
   height: 280px;
   object-fit: cover;
   border-radius: 12px 12px 0 0;
 }
 
-.event-card h3 {
+.ue-card h3 {
   margin: 12px 0;
   font-size: 1.1rem;
   color: #333;
   font-weight: 600;
 }
 
-/* Navigation buttons */
-.nav-btn {
+/* Buttons */
+.ue-btn {
   background: white;
   color: #b347b3;
   border: 2px solid #b347b3;
@@ -82,40 +80,40 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.nav-btn:hover {
+.ue-btn:hover {
   background: #636063;
   color: white;
   transform: scale(1.1);
 }
 
-.prev {
+.ue-prev {
   position: absolute;
   left: 2%;
 }
 
-.next {
+.ue-next {
   position: absolute;
   right: 2%;
 }
 
 /* Responsive */
 @media (max-width: 992px) {
-  .events-slider {
+  .ue-slider {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .event-card {
+  .ue-card {
     width: 45%;
   }
 }
 
 @media (max-width: 600px) {
-  .event-card {
+  .ue-card {
     width: 90%;
   }
 
-  .nav-btn {
+  .ue-btn {
     display: none;
   }
 }

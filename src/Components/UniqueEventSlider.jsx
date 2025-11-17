@@ -1,18 +1,12 @@
 import React, { useState } from "react";
-import "./Events.css";
+import "./UniqueEventSlider.css";
 import event1 from "../assets/event1.jpg";
 import event2 from "../assets/event2.jpg";
 
-function Events() {
-  const events = [
-    {
-      img: event1,
-      title: "Musc Event",
-    },
-    {
-      img: event2,
-      title: "Singing Event",
-    },
+function UniqueEventSlider() {
+  const eventList = [
+    { img: event1, title: "Music Event" },
+    { img: event2, title: "Singing Event" },
     {
       img: "https://media.istockphoto.com/id/936750120/photo/corporate-business-meeting.jpg?s=170667a&w=0&k=20&c=SXr_ObJ-DjHhNu2mWLjB-SXVst1pclk92pPlrsF8asg=",
       title: "Corporate Meetup",
@@ -31,35 +25,35 @@ function Events() {
     },
   ];
 
-  const [index, setIndex] = useState(0);
+  const [curr, setCurr] = useState(0);
 
-  const nextSlide = () => {
-    if (index < events.length - 4) setIndex(index + 1);
+  const goNext = () => {
+    if (curr < eventList.length - 4) setCurr(curr + 1);
   };
 
-  const prevSlide = () => {
-    if (index > 0) setIndex(index - 1);
+  const goPrev = () => {
+    if (curr > 0) setCurr(curr - 1);
   };
 
   return (
-    <div className="events-section">
-      <h2 className="section-title">Our Popular Events</h2>
+    <div className="ue-section">
+      <h2 className="ue-title">Our Events</h2>
 
-      <div className="slider-wrapper">
-        <button className="nav-btn prev" onClick={prevSlide}>
+      <div className="ue-wrapper">
+        <button className="ue-btn ue-prev" onClick={goPrev}>
           ❮
         </button>
 
-        <div className="events-slider">
-          {events.slice(index, index + 4).map((event, i) => (
-            <div className="event-card" key={i}>
-              <img src={event.img} alt={event.title} />
-              <h3>{event.title}</h3>
+        <div className="ue-slider">
+          {eventList.slice(curr, curr + 4).map((item, index) => (
+            <div className="ue-card" key={index}>
+              <img src={item.img} alt={item.title} />
+              <h3>{item.title}</h3>
             </div>
           ))}
         </div>
 
-        <button className="nav-btn next" onClick={nextSlide}>
+        <button className="ue-btn ue-next" onClick={goNext}>
           ❯
         </button>
       </div>
@@ -67,4 +61,4 @@ function Events() {
   );
 }
 
-export default Events;
+export default UniqueEventSlider;
