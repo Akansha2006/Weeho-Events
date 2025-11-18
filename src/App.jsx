@@ -23,6 +23,8 @@ import Performers from "./Components/Performers";
 import PerformerPage from "./Components/PerformerPage"; // ✅ Add this
 import BlogDetails from "./Components/reviews/BlogDetails";
 import EventPage from "./Components/EventPage";
+import BlogsPage from "./pages/BlogsPage";
+
 
 
 
@@ -46,7 +48,7 @@ function App() {
               <Performers />
             <UniqueEventSlider />
 
-              <PopularBlogPosts />
+             
               <PopularCustomers />
               
               <Footer />
@@ -60,6 +62,8 @@ function App() {
         <Route path="/weeho-details" element={<WeehoDetails />} />
         <Route path="/our-team" element={<OurTeam />} />
         <Route path="/event/:id" element={<EventPage />} />
+        <Route path="/blogs" element={<BlogsPage />} />
+
 
 
 

@@ -29,7 +29,7 @@ function Navbar() {
         <a href="#">About</a>
         <a href="#">Book An Event</a>
         <a href="/our-team">Our Team</a>
-        <a href="#">Blog</a>
+        <a href="/blogs">Blog</a>
         <a href="#">Contact</a>
       </nav>
 
