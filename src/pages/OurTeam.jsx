@@ -2,6 +2,8 @@ import React from "react";
 import "./OurTeam.css";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 export default function OurTeam2() {
   const navigate = useNavigate();
@@ -66,11 +68,11 @@ export default function OurTeam2() {
   ];
 
   return (
+    <>
+    
+      <Navbar/>
     <div className="ourteam2-section">
-      {/* 🔙 Back Button */}
-      <button className="back-Team-btn" onClick={() => navigate(-1)}>
-        ← Back
-      </button>
+      
 
       <h1 className="ourteam2-title">Meet Our Team</h1>
       <div className="ourteam2-container">
@@ -95,5 +97,7 @@ export default function OurTeam2() {
         ))}
       </div>
     </div>
+      <Footer/>
+      </>
   );
 }
