@@ -45,7 +45,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 Weeho. All Rights Reserved.</p>
+        <p>© 2025 ADORE By Simtrak Solutions. All Rights Reserved.</p>
       </div>
     </footer>
   );
