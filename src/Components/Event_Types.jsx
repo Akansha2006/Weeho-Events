@@ -6,20 +6,20 @@ import event2 from "../assets/event2.jpg";
 function Events() {
   const events = [
     {
-      img: event1,
-      title: "Musc Event",
+      img: "https://png.pngtree.com/background/20230611/original/pngtree-girl-singing-a-song-to-the-crowd-in-a-club-picture-image_3150321.jpg",
+      title: "Singing",
     },
     {
-      img: event2,
-      title: "Singing Event",
+      img: "https://img.freepik.com/premium-photo/dance-icons_1003030-9969.jpg?w=2000",
+      title: "Dancing",
     },
     {
-      img: "https://media.istockphoto.com/id/936750120/photo/corporate-business-meeting.jpg?s=170667a&w=0&k=20&c=SXr_ObJ-DjHhNu2mWLjB-SXVst1pclk92pPlrsF8asg=",
-      title: "Corporate Meetup",
+      img: "https://st3.depositphotos.com/2021995/13272/i/950/depositphotos_132722090-stock-photo-poetry-colorful-watercolor-and-ink.jpg",
+      title: "Poetry",
     },
     {
-      img: "https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=800&q=80",
-      title: "Fashion Show",
+      img: "https://media.istockphoto.com/id/1326936948/photo/storytelling-concept-film-slate-old-book-and-eyeglasses-in-library-room.jpg?s=612x612&w=0&k=20&c=Q0B5cgQiibU3tcqIKT_Ua-sWoB1gHLAnffJ_uzi9Yi8=",
+      title: "Storytelling",
     },
     {
       img: "https://images.unsplash.com/photo-1503428593586-e225b39bddfe?auto=format&fit=crop&w=800&q=80",
