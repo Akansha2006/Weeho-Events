@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import OurTeam from "./pages/OurTeam";
 
 import "./App.css";
+import Navbar from "./Components/Navbar";
 
 import Stats from "./Components/Stats";
 import Event_Types from "./Components/Event_Types";
@@ -21,6 +22,8 @@ import PopularBlogPosts from "./Components/reviews/PopularBlogPosts";
 import Performers from "./Components/Performers";
 import PerformerPage from "./Components/PerformerPage"; // ✅ Add this
 import BlogDetails from "./Components/reviews/BlogDetails";
+import EventPage from "./Components/EventPage";
+
 
 
 function App() {
@@ -33,7 +36,9 @@ function App() {
           path="/"
           element={
             <>
+            <Navbar/>
             <Header />
+            
              
               <PopularEvent />
              
@@ -49,11 +54,13 @@ function App() {
           }
         />
 
-        {/* ✅ Performer profile route */}
+        
         <Route path="/performer/:name" element={<PerformerPage />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path="/weeho-details" element={<WeehoDetails />} />
         <Route path="/our-team" element={<OurTeam />} />
+        <Route path="/event/:id" element={<EventPage />} />
+
 
 
       </Routes>
