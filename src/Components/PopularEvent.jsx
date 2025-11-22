@@ -12,12 +12,12 @@ export default function PopularEvent() {
     <div className="pe-page">
       <main className="pe-container">
         <section className="pe-row">
-          <div className="pe-image-wrap">
-            <img className="pe-image" src={about} alt="Loachella, NYC" />
-          </div>
+          <div className="pe-image-wrap pe-image-animate">
+  <img className="pe-image" src={about} alt="" />
+</div>
 
-          <div className="pe-details">
-            <h2 className="pe-event-title">About Weeho</h2>
+          <div className="pe-details pe-text-animate">
+  <h2 className="pe-event-title">About Weeho</h2>
             <p className="pe-desc">
               WeeHo – Euphoric Moments is an inclusive and dynamic online
               platform that celebrates and promotes artistic talent across
