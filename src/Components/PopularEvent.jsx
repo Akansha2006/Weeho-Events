@@ -3,20 +3,51 @@ import "./PopularEvent.css";
 import about from "../assets/about img.jpg";
 
 
+import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function PopularEvent() {
   const navigate = useNavigate();
+  const imgRef = useRef(null);
+const textRef = useRef(null);
+useEffect(() => {
+  const handleScroll = () => {
+    const triggerPoint = window.innerHeight - 100;
+
+    // IMAGE
+    const imgTop = imgRef.current.getBoundingClientRect().top;
+    if (imgTop < triggerPoint) {
+      imgRef.current.classList.add("pe-image-animate");
+      imgRef.current.classList.remove("hidden");
+    }
+
+    // TEXT (delay)
+    const textTop = textRef.current.getBoundingClientRect().top;
+    if (textTop < triggerPoint) {
+      textRef.current.classList.add("pe-text-animate");
+      textRef.current.classList.remove("hidden");
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll(); // run once
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+
 
   return (
     <div className="pe-page">
       <main className="pe-container">
         <section className="pe-row">
-          <div className="pe-image-wrap pe-image-animate">
+          <div className="pe-image-wrap hidden" ref={imgRef}>
+
   <img className="pe-image" src={about} alt="" />
 </div>
 
-          <div className="pe-details pe-text-animate">
+         <div className="pe-details hidden" ref={textRef}>
+
   <h2 className="pe-event-title">About Weeho</h2>
             <p className="pe-desc">
               WeeHo – Euphoric Moments is an inclusive and dynamic online

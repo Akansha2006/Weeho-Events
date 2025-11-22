@@ -135,18 +135,16 @@ body {
   animation-fill-mode: forwards;
 }
 
-
-/* Image Left Se Aayegi */
 .pe-image-animate {
   animation: slideLeft 1.2s ease-out forwards;
 }
 
-
-/* Text Right Se Aayega */
 .pe-text-animate {
   animation: slideRight 1.2s ease-out forwards;
-  animation-delay: 0.8s;
+  animation-delay: 0.4s;
 }
+
+
 
 
 /* KEYFRAMES */
@@ -247,4 +245,10 @@ body {
     font-size: 14px;
     line-height: 1.5;
   }
+}
+
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
 }
