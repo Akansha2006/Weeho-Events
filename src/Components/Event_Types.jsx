@@ -3,7 +3,31 @@ import "./Event_Types.css";
 import event1 from "../assets/event1.jpg";
 import event2 from "../assets/event2.jpg";
 
+import { useEffect, useRef } from "react";
 function Events() {
+
+  const slideRef = useRef(null);
+
+useEffect(() => {
+  const handleScroll = () => {
+    if (!slideRef.current) return;
+
+    const top = slideRef.current.getBoundingClientRect().top;
+    const trigger = window.innerHeight - 50;
+
+    if (top < trigger) {
+      slideRef.current.classList.add("slider-animate");
+      slideRef.current.classList.remove("slider-hidden");
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll();
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+
   const events = [
     {
       img: "https://png.pngtree.com/background/20230611/original/pngtree-girl-singing-a-song-to-the-crowd-in-a-club-picture-image_3150321.jpg",
@@ -45,7 +69,8 @@ function Events() {
     <div className="events-section">
       <h2 className="section-title">Event Types</h2>
 
-      <div className="slider-wrapper">
+      <div className="slider-wrapper slider-hidden" ref={slideRef}>
+
         <button className="nav-btn prev" onClick={prevSlide}>
           ❮
         </button>
